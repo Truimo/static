@@ -16,19 +16,19 @@ button{
 @-webkit-keyframes fade-in{0%{opacity:0;}40%{opacity:0;}100%{opacity:1;}}
 /*发布选择框*/
 .jinsom-publish-type-form {
-	bottom: 0;
-	height: auto;
-	top: auto;
-	background: none;
-	text-align: center;
+  bottom: 0;
+  height: auto;
+  top: auto;
+  background: none;
+  text-align: center;
 }
 .jinsom-publish-type-form .bottom {
-	background: #fff;
-	width: 90%;
-	margin: 0 auto;
-	overflow: hidden;
-	border-radius: 0 0 15px 15px;
-	position: initial;
+  background: #fff;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 0 0 15px 15px;
+  position: initial;
 }
 .jinsom-publish-type-form .bottom li {
 	width: 25%;
