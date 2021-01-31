@@ -1,7 +1,7 @@
 /*
  * 萌圈美化，复制留来源
  * BY @浅小沫
- * Ver 1.0
+ * Ver 1.12
 */
 /*默认修改*/
 a{
@@ -229,7 +229,7 @@ button{
 }
 /*替换QQ登录的图标*/
 .fa-qq:before{
-  content: url(https://img.truimo.com/moe/img/qqlogin.png);
+  content: url(../img/qqlogin.png);
 }
 /*更多*/
 .jinsom-post-read-more{
