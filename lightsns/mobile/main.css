@@ -1,0 +1,285 @@
+/*
+ * 萌圈美化，复制留来源
+ * BY @浅小沫
+ * Ver 1.53
+*/
+/*默认修改*/
+a{
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+button{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+/*优化内容页过渡动画效果*/
+@keyframes fade-in{0%{opacity:0;}40%{opacity:0;}100%{opacity:1;}} 
+@-webkit-keyframes fade-in{0%{opacity:0;}40%{opacity:0;}100%{opacity:1;}}
+/*发布选择框*/
+.jinsom-publish-type-form {
+	bottom: 0;
+	height: auto;
+	top: auto;
+	background: none;
+	text-align: center;
+}
+.jinsom-publish-type-form .bottom {
+	background: #fff;
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+	border-radius: 0 0 15px 15px;
+	position: initial;
+}
+.jinsom-publish-type-form .bottom li {
+	width: 25%;
+}
+.jinsom-publish-type-form .bottom li span{
+  border-radius: 50%;
+}
+.jinsom-publish-type-form .bottom li p{
+  font-size:0.88em;
+}
+.jinsom-publish-type-form .close a i {
+  font-size: 1.38em;
+}
+/*个人资料二维码*/
+.jinsom-publish-type-form.profile-qrcode .tips{
+  margin-top: -18vw;
+  padding-bottom: 11.5vw;
+}
+.jinsom-publish-type-form.profile-qrcode #jinsom-qrcode{
+  padding: 80px 0;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 0 15px;
+}
+/*帖子列表*/
+.jinsom-post-words .header .info{
+  width: auto;
+  float: none;
+  position: relative;
+  top: -0.8vw;
+}
+.jinsom-post-words .header .info .name{
+  font-size: 1.08em;
+  margin: 1.25vw 0 1vw 0;
+  line-height: 1;
+}
+.jinsom-post-words {
+  background-color: #fff;
+}
+.jinsom-post-images-list a{
+  border: none;
+  padding: 1px;
+}
+.jinsom-post-words .content{
+  padding-top: 0;
+}
+.jinsom-post-words .content h1{
+  margin-top: 2vw;
+}
+.jinsom-post-words .footer, .jinsom-post-single .footer, .jinsom-single .footer .footer{
+  border-top: 0.05em solid #EEEEF5;
+}
+/*话题*/
+.jinsom-city-topic-bar .topic-list{
+  background-color: #F4F4F4;
+  padding-left: 1.38vw;
+  color: #178BCF;
+  font-size: 0.88em;
+  margin-right: 4vw;
+}
+.jinsom-city-topic-bar .topic-list span{
+  background-color: #518FCB;
+  color: #F4F4F4;
+  display: none;
+}
+.jinsom-city-topic-bar .topic-list .link{
+  color: #178BCF;
+}
+.jinsom-city-topic-bar .topic-list:before{
+  content:"# ";
+}
+/*定位*/
+.jinsom-city-topic-bar .jinsom-post-city{
+  font-size: 0.88em;
+}
+.jinsom-city-topic-bar .jinsom-post-city i{
+  font-size: 0.88em;
+}
+/*底部*/
+.jinsom-footer-toolbar{
+  background-color:#fff;
+  border-top: 0.05em solid #f7f7f7;
+}
+/*背景*/
+.page-content .home{
+  background-color: #F4F4F4;
+}
+.jinsom-mine-page{
+  background-color: #fff;
+}
+/*我的页*/
+.jinsom-mine-page .jinsom-mine-box .jinsom-mine-user-info-cell .number .list{
+  border-right: 1px solid #E7E7E7;
+}
+.jinsom-mine-page .jinsom-mine-box .jinsom-mine-user-info-cell .number .list:nth-of-type(4){
+  border: none;
+}
+.jinsom-mine-page .jinsom-mine-box{
+  margin: 0;
+}
+.jinsom-mine-page .jinsom-mine-box .jinsom-mine-user-info-cell{
+  margin: 0 2px 0 2px;
+}
+.jinsom-mine-page .jinsom-mine-box .jinsom-mine-user-info-cell .header{
+  margin: 0 6px 0 6px;
+}
+/*首页导航*/
+.jinsom-home-navbar .subnavbar{
+  background-color: #fff;
+  border-bottom: 0.05em solid #f7f7f7;
+}
+.jinsom-home-menu li{
+  color: #757575;
+}
+.jinsom-home-menu li.on{
+  color: #FB7299;
+  font-size: 1.08em;
+  font-weight: bold;
+}
+.jinsom-home-menu li.on:after{
+  width: 100%;
+  left: 0;
+}
+/*首页评论*/
+.jinsom-post-list-comment-content li{
+  border-left: 0.15em solid #E7E7E7;
+  padding-left: 1.38vw;
+}
+.jinsom-post-list-comment-content li>a{
+  font-weight: bold;
+  color: #000;
+}
+/*会员红名*/
+.jinsom-post-list-comment-content li a font{
+  color: #FB7299!important;
+}
+.jinsom-post-single .footer .user font{
+  color: #FB7299!important;
+}
+.jinsom-post-words .header .info .name .link font{
+  color: #FB7299!important;
+}
+/*等级*/
+.jinsom-lv .lv{
+  display: inline-block;
+  width: 8vw;
+  height: 4vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: -2.5vw;
+  margin-right: -1vw;
+  position: relative;
+  top: 1vw;
+}
+.jinsom-lv .lv0{
+  background-image: url(https://img.truimo.com/moe/lv/lv0.png);
+}
+.jinsom-lv .lv1{
+  background-image: url(https://img.truimo.com/moe/lv/lv1.png);
+}
+.jinsom-lv .lv2{
+  background-image: url(https://img.truimo.com/moe/lv/lv2.png);
+}
+.jinsom-lv .lv3{
+  background-image: url(https://img.truimo.com/moe/lv/lv3.png);
+}
+.jinsom-lv .lv4{
+  background-image: url(https://img.truimo.com/moe/lv/lv4.png);
+}
+.jinsom-lv .lv5{
+  background-image: url(https://img.truimo.com/moe/lv/lv5.png);
+}
+.jinsom-lv .lv6{
+  background-image: url(https://img.truimo.com/moe/lv/lv6.png);
+}
+/*置顶推荐图标*/
+.jinsom-post-words .header .info .name .sticky, .jinsom-post-words .content h1 .sticky, .jinsom-post-single h1 .sticky, .jinsom-post-words .content h1 .sticky-member,.jinsom-post-single h1 .sticky-member{
+  position: absolute;
+  top: 4vw;
+  right: 4vw;
+}
+.jinsom-post-words .header .info .name .commend,.jinsom-post-words .content h1 .commend,.jinsom-post-single h1 .commend{
+  position: absolute;
+  top: 4vw;
+  right: 4vw;
+}
+.jinsom-post-words .content h1 span:nth-last-of-type(2), .jinsom-post-words .content h1 span:nth-last-of-type(2), .jinsom-post-single h1 span:nth-last-of-type(2), .jinsom-post-single h1 span:nth-last-of-type(2){
+  right: 12vw;
+}
+/*隐藏海报*/
+.jinsom-post-more-form .box li:nth-child(3){
+  display: none;
+}
+/*登录页*/
+.jinsom-login-popover .popover-inner .list-block ul li:last-child{
+  display: none;
+}
+.jinsom-login-popover .popover-inner .list-block ul li:active{
+  background-color: #fb7299;
+}
+.jinsom-login-popover .popover-inner .list-block ul li a:active{
+  color: #fff;
+}
+.jinsom-reg-doc input[type="checkbox"]{
+  width: 4.5vw;
+  height: 4.5vw;
+  vertical-align: middle;
+}
+/*加载*/
+.jinsom-loading i{
+  background: #A4DDFB;
+}
+.jinsom-loading-post i:nth-child(5){
+  background-color: #C9FAFE;
+}
+.jinsom-loading-post i:nth-child(4){
+  background-color: #D5E1F1;
+}
+.jinsom-loading-post i:nth-child(3){
+  background-color: #DFC6E3;
+}
+.jinsom-loading-post i:nth-child(2){
+  background-color: #E7AFD6;
+}
+.jinsom-loading-post i:nth-child(1){
+  background-color: #EF95C8;
+}
+/*背景颜色*/
+.page, .page-content.home, pre, .avatar, .jinsom-member-content, .jinsom-history-single-content, .jinsom-setting-content, .jinsom-collect-content{
+  background-color: #F5F6FA;
+}
+/*替换QQ登录的图标*/
+.fa-qq:before{
+  content: url(https://img.truimo.com/moe/img/qqlogin.png);
+}
+/*更多*/
+.jinsom-post-read-more{
+  color: #178BCF;
+}
+/*造字工房悦圆字体*/
+@font-face{
+  font-family: "moonbridge";
+  src: url("https://cdn.jsdelivr.net/gh/Truimo/Fonts@master/font/zzgfyy/moonbridge.woff2") format("woff2"),
+       url("https://cdn.jsdelivr.net/gh/Truimo/Fonts@master/font/zzgfyy/moonbridge.woff") format("woff"),
+       url("https://cdn.jsdelivr.net/gh/Truimo/Fonts@master/font/zzgfyy/moonbridge.ttf") format("truetype"),
+       url("https://cdn.jsdelivr.net/gh/Truimo/Fonts@master/font/zzgfyy/moonbridge.eot") format("embedded-opentype"),
+       url("https://cdn.jsdelivr.net/gh/Truimo/Fonts@master/font/zzgfyy/moonbridge.svg") format("svg"),
+       url("https://cdn.jsdelivr.net/gh/Truimo/Fonts@master/font/zzgfyy/moonbridge.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+:not([class*="icon"]):not(i){
+  font-family: "moonbridge","FangSong","STFangsong","宋体",Arial,sans-serif;
+}
