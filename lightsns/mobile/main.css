@@ -171,39 +171,6 @@ button{
 .jinsom-post-words .header .info .name .link font{
   color: #FB7299!important;
 }
-/*等级*/
-.jinsom-lv .lv{
-  display: inline-block;
-  width: 8vw;
-  height: 4vw;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-left: -2.5vw;
-  margin-right: -1vw;
-  position: relative;
-  top: 1vw;
-}
-.jinsom-lv .lv0{
-  background-image: url(https://img.truimo.com/moe/lv/lv0.png);
-}
-.jinsom-lv .lv1{
-  background-image: url(https://img.truimo.com/moe/lv/lv1.png);
-}
-.jinsom-lv .lv2{
-  background-image: url(https://img.truimo.com/moe/lv/lv2.png);
-}
-.jinsom-lv .lv3{
-  background-image: url(https://img.truimo.com/moe/lv/lv3.png);
-}
-.jinsom-lv .lv4{
-  background-image: url(https://img.truimo.com/moe/lv/lv4.png);
-}
-.jinsom-lv .lv5{
-  background-image: url(https://img.truimo.com/moe/lv/lv5.png);
-}
-.jinsom-lv .lv6{
-  background-image: url(https://img.truimo.com/moe/lv/lv6.png);
-}
 /*置顶推荐图标*/
 .jinsom-post-words .header .info .name .sticky, .jinsom-post-words .content h1 .sticky, .jinsom-post-single h1 .sticky, .jinsom-post-words .content h1 .sticky-member,.jinsom-post-single h1 .sticky-member{
   position: absolute;
@@ -267,19 +234,4 @@ button{
 /*更多*/
 .jinsom-post-read-more{
   color: #178BCF;
-}
-/*造字工房悦圆字体*/
-@font-face{
-  font-family: "moonbridge";
-  src: url("https://cdn.jsdelivr.net/gh/Truimo/Fonts@master/font/zzgfyy/moonbridge.woff2") format("woff2"),
-       url("https://cdn.jsdelivr.net/gh/Truimo/Fonts@master/font/zzgfyy/moonbridge.woff") format("woff"),
-       url("https://cdn.jsdelivr.net/gh/Truimo/Fonts@master/font/zzgfyy/moonbridge.ttf") format("truetype"),
-       url("https://cdn.jsdelivr.net/gh/Truimo/Fonts@master/font/zzgfyy/moonbridge.eot") format("embedded-opentype"),
-       url("https://cdn.jsdelivr.net/gh/Truimo/Fonts@master/font/zzgfyy/moonbridge.svg") format("svg"),
-       url("https://cdn.jsdelivr.net/gh/Truimo/Fonts@master/font/zzgfyy/moonbridge.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-:not([class*="icon"]):not(i){
-  font-family: "moonbridge","FangSong","STFangsong","宋体",Arial,sans-serif;
 }
