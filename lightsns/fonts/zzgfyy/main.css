@@ -1,0 +1,15 @@
+/*造字工房悦圆字体*/
+@font-face{
+  font-family: "moonbridge";
+  src: url("font/moonbridge.woff2") format("woff2"),
+       url("font/moonbridge.woff") format("woff"),
+       url("font/moonbridge.ttf") format("truetype"),
+       url("font/moonbridge.eot") format("embedded-opentype"),
+       url("font/moonbridge.svg") format("svg"),
+       url("font/moonbridge.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+:not([class*="icon"]):not(i){
+  font-family: "moonbridge","FangSong","STFangsong","宋体",Arial,sans-serif;
+}
