@@ -1,0 +1,33 @@
+/*等级*/
+.jinsom-lv .lv{
+  display: inline-block;
+  width: 8vw;
+  height: 4vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: -2.5vw;
+  margin-right: -1vw;
+  position: relative;
+  top: 1vw;
+}
+.jinsom-lv .lv0{
+  background-image: url(../img/lv/lv0.png);
+}
+.jinsom-lv .lv1{
+  background-image: url(../img/lv/lv1.png);
+}
+.jinsom-lv .lv2{
+  background-image: url(../img/lv/lv2.png);
+}
+.jinsom-lv .lv3{
+  background-image: url(../img/lv/lv3.png);
+}
+.jinsom-lv .lv4{
+  background-image: url(../img/lv/lv4.png);
+}
+.jinsom-lv .lv5{
+  background-image: url(../img/lv/lv5.png);
+}
+.jinsom-lv .lv6{
+  background-image: url(../img/lv/lv6.png);
+}
