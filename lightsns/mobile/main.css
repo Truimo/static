@@ -1,7 +1,7 @@
 /*
  * 萌圈美化，复制留来源
  * BY @浅小沫
- * Ver 1.12
+ * Ver 1.16
 */
 /*默认修改*/
 a{
@@ -54,11 +54,14 @@ button{
   margin: 0 15px;
 }
 /*帖子列表*/
+.jinsom-post-words .header{
+  padding-left: 4vw;
+}
 .jinsom-post-words .header .info{
   width: auto;
   float: none;
   position: relative;
-  top: -0.8vw;
+  top: -1.8vw;
 }
 .jinsom-post-words .header .info .name{
   font-size: 1.08em;
@@ -76,7 +79,8 @@ button{
   padding-top: 0;
 }
 .jinsom-post-words .content h1{
-  margin-top: 2vw;
+  margin: 0;
+  line-height: 8vw;
 }
 .jinsom-post-words .footer, .jinsom-post-single .footer, .jinsom-single .footer .footer{
   border-top: 0.05em solid #EEEEF5;
@@ -161,6 +165,11 @@ button{
   font-weight: bold;
   color: #000;
 }
+/*展示评论*/
+.jinsom-post-list-comment-content li>m{
+  float: right;
+  background-color: rgba(233,30,99,0.2);
+}
 /*会员红名*/
 .jinsom-post-list-comment-content li a font{
   color: #FB7299!important;
@@ -177,6 +186,10 @@ button{
   top: 4vw;
   right: 4vw;
 }
+/*回复栏长度修改*/
+.jinsom-post-words-tool > a:first-child {
+  width: 45vw!important;
+}
 .jinsom-post-words .header .info .name .commend,.jinsom-post-words .content h1 .commend,.jinsom-post-single h1 .commend{
   position: absolute;
   top: 4vw;
@@ -184,6 +197,13 @@ button{
 }
 .jinsom-post-words .content h1 span:nth-last-of-type(2), .jinsom-post-words .content h1 span:nth-last-of-type(2), .jinsom-post-single h1 span:nth-last-of-type(2), .jinsom-post-single h1 span:nth-last-of-type(2){
   right: 12vw;
+}
+.jinsom-post-words .header .info .name .sticky, .jinsom-post-words .content h1 .sticky, .jinsom-post-single h1 .sticky, .jinsom-post-words .content h1 .sticky-member,.jinsom-post-single h1 .sticky-member{
+  line-height: normal;
+}
+.jinsom-post-words .header .info .name .commend, .jinsom-post-words .content h1 .commend, .jinsom-post-single h1 .commend{
+  line-height: normal;
+  font-size: 3.5vw;
 }
 /*隐藏海报*/
 .jinsom-post-more-form .box li:nth-child(3){
@@ -228,10 +248,56 @@ button{
   background-color: #F5F6FA;
 }
 /*替换QQ登录的图标*/
-.fa-qq:before{
-  content: url(../img/qqlogin.png);
+.jinsom-social-login .qq i.jinsom-qq:before{
+  content: '';
+}
+.jinsom-social-login .qq i.jinsom-qq{
+  display: inline-block;
+  width: 11.2vw;
+  height: 11.2vw;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url(https://cdn.jsdelivr.net/gh/Truimo/static@1.21/lightsns/img/qqlogin.png);
+  margin: 0.8vw;
 }
 /*更多*/
 .jinsom-post-read-more{
   color: #178BCF;
+}
+/*登录图标框*/
+.jinsom-social-login{
+  background-color: rgb(255 255 255 / 0.6);
+  display: flex;
+  flex-direction: row;
+}
+.jinsom-social-login li{
+  float: none;
+  flex: 1;
+}
+/*登录LOGIN*/
+.login-screen-content .jinsom-login-input-form:before{
+  display: block;
+  display: -moz-box;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  display: box;
+  box-pack: center;
+  box-align: center;
+  content: 'LOGIN';
+  position: fixed;
+  top: 6%;
+  left: 0;
+  right: 0;
+  color: #fb7299;
+  font-size: 8vw;
+  letter-spacing: 2vw;
+  width: 100vw;
+  height: 20vw;
 }
