@@ -5,7 +5,7 @@
 
 // 判断EventUtil是否存在
 if(typeof EventUtil == 'undefined') {
- document.write("<script type='text/javascript' src='../../vendor/EventUtil/index.min.js'></script>");
+ document.write("<script type='text/javascript' src='https://cdn.jsdelivr.net/gh/Truimo/static@1.43/vendor/EventUtil/index.min.js'></script>");
 }
 
 // 右划返回
