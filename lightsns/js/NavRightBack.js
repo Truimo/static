@@ -4,7 +4,7 @@
  */
 
 // 判断EventUtil是否存在
-if(!typeof EventUtil == 'object') {
+if(typeof EventUtil == 'undefined') {
  document.write("<script type='text/javascript' src='../../vendor/EventUtil/index.min.js'></script>");
 }
 
