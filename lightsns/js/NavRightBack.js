@@ -14,7 +14,7 @@ NavRightBack = function(){
   var Body = document.getElementsByTagName("body")[0];
   // nav返回
   var NavBack = function(){
-    if($('.navbar-on-center').find('.back').length != 0)
+    if($('.navbar-on-center').find('.back').length != 0) {
       $('.navbar-on-center').find('.back').click();
     }
   }
