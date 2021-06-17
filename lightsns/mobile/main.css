@@ -172,16 +172,16 @@ button{
 }
 /*会员红名*/
 .jinsom-post-list-comment-content li a font {
-  color: #0c73c2;
-}
-.jinsom-post-list-comment-content li a .vip-user {
   color: #FB7299!important;
 }
 .jinsom-post-single .footer .user font{
-  color: #FB7299;
+  color: #0c73c2;
 }
 .jinsom-post-words .header .info .name .link font{
-  color: #FB7299;
+  color: #0c73c2;
+}
+.jinsom-post-words .header .info .name .link .vip-user {
+  #FB7299!important;
 }
 /*置顶推荐图标*/
 .jinsom-post-words .header .info .name .sticky, .jinsom-post-words .content h1 .sticky, .jinsom-post-single h1 .sticky, .jinsom-post-words .content h1 .sticky-member,.jinsom-post-single h1 .sticky-member{
