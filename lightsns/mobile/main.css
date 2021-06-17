@@ -166,19 +166,22 @@ button{
   color: #000;
 }
 /*展示评论*/
-.jinsom-post-list-comment-content li>m{
+.jinsom-post-list-comment-content li>m {
   float: right;
   background-color: rgba(233,30,99,0.2);
 }
 /*会员红名*/
-.jinsom-post-list-comment-content li a font{
-  color: #FB7299!important;
+.jinsom-post-list-comment-content li a font {
+  color: #0c73c2;
+}
+.jinsom-post-list-comment-content li a .vip-user {
+  color: #FB7299;
 }
 .jinsom-post-single .footer .user font{
-  color: #FB7299!important;
+  color: #FB7299;
 }
 .jinsom-post-words .header .info .name .link font{
-  color: #FB7299!important;
+  color: #FB7299;
 }
 /*置顶推荐图标*/
 .jinsom-post-words .header .info .name .sticky, .jinsom-post-words .content h1 .sticky, .jinsom-post-single h1 .sticky, .jinsom-post-words .content h1 .sticky-member,.jinsom-post-single h1 .sticky-member{
