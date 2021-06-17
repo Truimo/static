@@ -175,7 +175,7 @@ button{
   color: #0c73c2;
 }
 .jinsom-post-list-comment-content li a .vip-user {
-  color: #FB7299;
+  color: #FB7299!important;
 }
 .jinsom-post-single .footer .user font{
   color: #FB7299;
