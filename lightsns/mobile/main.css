@@ -1,7 +1,7 @@
 /*
  * 萌圈美化，复制留来源
  * BY @浅小沫
- * Ver 2.89
+ * Ver 3.12
 */
 /*默认修改*/
 a{
@@ -59,23 +59,49 @@ button{
   border-radius: 15px;
   margin: 0 15px;
 }
+/* 去边距圆角 */
+.jinsom-sns-cell-menu {  /* 图标导航 */
+  margin: 0 0 3vw 0;
+  border-radius: 0;
+}
 /*帖子列表*/
+.jinsom-post-words,
+.jinsom-post-words * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .jinsom-post-words .header{
-  padding-left: 4vw;
+  padding: 3vw 0 2vw 4vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 .jinsom-post-words .header .info{
   width: auto;
   float: none;
-  position: relative;
-  top: -1.8vw;
+  position: static;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: flex-start;
 }
 .jinsom-post-words .header .info .name{
   font-size: 1.08em;
-  margin: 1.25vw 0 1vw 0;
-  line-height: 1;
+  margin: 0;
+  padding: 0;
+  margin: 0.3vw 0;
+  line-height: normal;
 }
 .jinsom-post-words {
   background-color: #fff;
+  margin: 0 0 3vw 0;
+  border-radius: 0;
 }
 .jinsom-post-images-list a{
   border: none;
@@ -273,10 +299,15 @@ button{
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
   background-image: url(https://cdn.jsdelivr.net/gh/Truimo/static@1.21/lightsns/img/qqlogin.png);
   margin: 0.8vw;
+  background-attachment: initial;
+  border-radius: 50%;
+}
+/* 登录更多框 flex */
+.jinsom-social-login {
+  align-items: flex-end;
 }
 /*更多*/
 .jinsom-post-read-more{
