@@ -1,7 +1,7 @@
 /*
  * 萌圈美化，复制留来源
  * BY @浅小沫
- * Ver 1.16
+ * Ver 2.89
 */
 /*默认修改*/
 a{
@@ -10,6 +10,12 @@ a{
 button{
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent;
+}
+::selection{
+  background-color: rgba(251,114,153,0.6);
+}
+::-moz-selection{
+  background-color: rgba(251,114,153,0.6);
 }
 /*优化内容页过渡动画效果*/
 @keyframes fade-in{0%{opacity:0;}40%{opacity:0;}100%{opacity:1;}} 
@@ -81,9 +87,10 @@ button{
 .jinsom-post-words .content h1{
   margin: 0;
   line-height: 8vw;
+  font-weight: bold;
 }
-.jinsom-post-words .footer, .jinsom-post-single .footer, .jinsom-single .footer .footer{
-  border-top: 0.05em solid #EEEEF5;
+.jinsom-post-words .footer, .jinsom-post-single .footer, .jinsom-single .footer .footer {
+  border: none;
 }
 /*话题*/
 .jinsom-city-topic-bar .topic-list{
@@ -184,7 +191,11 @@ button{
   color: #FB7299!important;
 }
 /*置顶推荐图标*/
-.jinsom-post-words .header .info .name .sticky, .jinsom-post-words .content h1 .sticky, .jinsom-post-single h1 .sticky, .jinsom-post-words .content h1 .sticky-member,.jinsom-post-single h1 .sticky-member{
+.jinsom-post-words .header .info .name .sticky,
+.jinsom-post-words .content h1 .sticky,
+.jinsom-post-single h1 .sticky,
+.jinsom-post-words .content h1 .sticky-member,
+.jinsom-post-single h1 .sticky-member{
   position: absolute;
   top: 4vw;
   right: 4vw;
@@ -298,9 +309,164 @@ button{
   top: 6%;
   left: 0;
   right: 0;
-  color: #fb7299;
+  color: var(--jinsom-color);
   font-size: 8vw;
   letter-spacing: 2vw;
   width: 100vw;
   height: 20vw;
+}
+
+/* 发布按钮 */
+.jinsom-footer-toolbar .publish i {
+  font-size: 8.8vw;
+}
+
+/* 注册按钮 */
+.jinsom-member-other-toolbar .follow {
+  color: var(--jinsom-color);
+}
+
+/* 私信发送按钮 */
+.messagebar textarea+.link {
+  margin: 0 3vw;
+}
+/* 聊天背景 */
+.page-content.jinsom-chat-list-content {
+  background-color: #F5F6FA;
+}
+/* 提示小气泡 */
+.jinsom-msg-tips, .jinsom-msg-tips:after{
+  background-color: var(--jinsom-color);
+}
+/* 私信自己发送的气泡 */
+.jinsom-chat-list li.myself .jinsom-chat-message-list-content, .jinsom-chat-group-list li.myself .jinsom-chat-message-list-content {
+  background-color: var(--jinsom-color);
+}
+.jinsom-chat-list li.myself .jinsom-chat-message-list-content:after, .jinsom-chat-group-list li.myself .jinsom-chat-message-list-content:after {
+  border-top-color: var(--jinsom-color);
+}
+/* 私信对方气泡 */
+.jinsom-chat-message-list-content {
+  background-color: #fff;
+}
+.jinsom-chat-message-list-content:after {
+  border-color: #fff transparent transparent;
+}
+
+/* 帖子列表 按钮 */
+.jinsom-post-words .footer a {
+  flex: 1.8;
+  font-size: 3.5vw;
+  color: rgba(0,0,0,0.6);
+}
+.jinsom-post-words .footer a.more {
+  flex: 3;
+}
+.jinsom-post-words .footer a i {
+  font-size: 3.5vw;
+  color: #000;
+}
+/* 帖子列表 名字下面 */
+.jinsom-post-words .header .info .other {
+  color: rgb(142,142,147);
+}
+
+/* 话题 */
+.jinsom-city-topic-bar .topic-list {
+  margin-bottom: 0;
+}
+
+/* 轮播图 小圆点 */
+.owl-dots {
+  opacity: 0.8;
+}
+
+/* 按钮 */
+.jinsom-post-more-form .cancel, .jinsom-reg-type-form-content .cancel {
+	border-radius: 0;
+}
+
+/* 列表弹窗 */
+.actions-modal-group{
+  border-radius: 0;
+  margin: 2vw 0 0 0;
+}
+.actions-modal-group:first-child {
+	margin: 0;
+}
+/* 第一个，最后一个 */
+.actions-modal-button:first-child, .actions-modal-label:first-child,
+.actions-modal-button:last-child, .actions-modal-label:last-child,
+.actions-modal-button:first-child:last-child, .actions-modal-label:first-child:last-child {
+  border-radius: 0;
+}
+
+/* 等级 */
+.jinsom-lv {
+  user-select: initial;
+  padding: 0;
+  line-height: 0;
+}
+.jinsom-lv i {
+  font-size: 6.5vw;
+  vertical-align: middle;
+  user-select: initial;
+}
+
+/* 首页幻灯片铺满 */
+.jinsom-mobile-sns-slider-content {
+  padding: 0;
+  margin: 2vw 0;
+  border-radius: 0;
+}
+#jinsom-sns-slider .owl-stage-outer .owl-stage .owl-item{
+  width: 100vw!important;
+}
+.owl-carousel .owl-stage-outer,
+.jinsom-mobile-slider .item a {
+  border-radius: 0;
+}
+
+/* layer美化 */
+.layui-m-layershade {
+  background-color: rgba(0,0,0,0.28);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+.layui-m-layerchild {
+  box-shadow: none;
+}
+.layui-m-layer .layui-m-layerchild {
+  width: 82%;
+}
+.layui-m-layercont {
+  padding: 35px 25px;
+}
+.layui-m-layerbtn {
+  background-color: inherit;
+  border-top-width: 0.618px;
+  height: 38px;
+  line-height: 38px;
+}
+.layui-m-layerbtn span {
+  cursor: default;
+}
+.layui-m-layerbtn span:action {
+  background-color: #555;
+}
+.layui-m-layerbtn span[no] {
+  border-right-width: 0.618px;
+}
+.layui-m-layerbtn span[yes] {
+  color: var(--jinsom-color);
+}
+/* 头像去除边框 */
+.avatar {
+  border: none;
+}
+/* 认证图标细节化 */
+.jinsom-verify {
+  right: auto;
+  left: 7.28vw;
+  bottom: -0.618vw;
 }
