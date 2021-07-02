@@ -79,12 +79,12 @@ var AppShow = function () {
             btn: '好的',
             shadeClose: false,
             yes: function yes() {
-              wondow.location.href = this.config.down;
+              window.location.href = this.config.down;
             }
           });
         } else {
           timer = setTimeout(function () {
-            wondow.location.href = this.config.down;
+            window.location.href = this.config.down;
           }, 500);
         }
       });
