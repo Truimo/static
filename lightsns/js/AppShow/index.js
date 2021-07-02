@@ -71,7 +71,8 @@ var AppShow = function () {
       body.appendChild(iframe);
       iframe.src = this.config.open;
       $(body).on('click', '#AppShow_open', function () {
-        iframe.contentWindow.location.reload(); // 刷新iframe
+        iframe.remove();  // 移除
+        body.appendChild(iframe);
         // 微信内无法使用scheme link打开APP，有白名单除外
         if (/MicroMessenger/gi.test(navigator.userAgent)) {
           // 弹窗引导
@@ -99,10 +100,12 @@ var AppShow = function () {
         var tag = document.hidden || document.webkitHidden;
         if (tag) {
           clearTimeout(timer);
+          iframe.remove();
         }
       });
       $(window).on('pagehide', function () {
         clearTimeout(timer);
+        iframe.remove();
       });
     }
   }]);
