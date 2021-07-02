@@ -32,7 +32,7 @@ var AppShow = function () {
     key: "init",
     value: function init() {
       var time = sessionStorage.getItem("AppShow"),
-          after = Number(this.config.time) * 60 * 60 * 1000 * 1000,
+          after = Number(this.config.time) * 60 * 60 * 1000,
           now = new Date().getTime();
       if (time == null) {
         this.show();
