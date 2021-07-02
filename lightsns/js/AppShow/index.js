@@ -47,6 +47,7 @@ var AppShow = function () {
     key: "show",
     value: function show() {
       var timer = null,
+          down = this.config.down,
           iframe = document.createElement('iframe'),
           style = document.createElement("style"),
           type = document.createAttribute("type"),
@@ -79,12 +80,12 @@ var AppShow = function () {
             btn: '好的',
             shadeClose: false,
             yes: function yes() {
-              window.location.href = this.config.down;
+              window.location.href = down;
             }
           });
         } else {
           timer = setTimeout(function () {
-            window.location.href = this.config.down;
+            window.location.href = down;
           }, 500);
         }
       });
