@@ -495,9 +495,3 @@ button{
 .avatar {
   border: none;
 }
-/* 认证图标细节化 */
-.jinsom-verify {
-  right: auto;
-  left: 7.28vw;
-  bottom: -0.618vw;
-}
